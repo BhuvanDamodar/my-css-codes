@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Universal selector */
+        *{
+            width: 500px;
+            border-radius: 6px;
+        }
+        
+
+
+        /* Element selector */
+        p{
+            border: 2px solid lavender;
+        }
+        
+        /* ID selector */
+        #redElement{
+            color: red;
+        }
+
+        /* Class selector */
+        .purpleElement{
+            color: purple;
+        }
+        .bggreen{
+            background-color: green;
+        }
+
+        /* group selector */
+        footer, header{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS Selectors</h3>
+    <p id="redElement">This is simple paragraph to demonstrate css selectors</p>
+    <p>This is another simple paragraph to demonstrate css selectors</p>
+    <div>
+        <span class="purpleElement bggreen">This is another simple paragraph inside div to demonstrate css selectors</span>           
+    </div>
+    <p class="purpleElement">This is yet another simple paragraph to demonstrate css selectors</p>
+
+    <header>
+        This is header
+    </header>
+
+    <footer>
+        This is footer
+    </footer>
+</body>
+</html>

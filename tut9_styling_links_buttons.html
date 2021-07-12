@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseduo selectors & more designing</title>
+    <style>
+        .container{
+            border: 2px solid grey;
+            background-color:antiquewhite;
+            padding: 40px;
+            margin: 50px auto;
+            width: 600px;
+        }
+
+        .btn{
+            background-color: bisque;
+            padding: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 3px;
+            
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: green;
+            background-color: blue;
+        }
+        a:visited{
+            background-color: yellow;
+        }
+        a:active{
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas saepe commodi non nam consectetur corrupti id sit, eum, ut tenetur debitis eligendi odit sunt esse assumenda perspiciatis repellendus cumque ullam adipisci perferendis, blanditiis impedit accusantium natus possimus. Temporibus, eos. Recusandae.</p>
+        <a href="https://codewithharry.com" target="_blank" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>

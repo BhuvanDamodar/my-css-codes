@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 1000px;
+            border: 3px solid purple;
+            margin: 50px auto;
+            background-color: aliceblue;
+        }
+        
+        .items{
+            
+            border: 2px solid maroon;
+            margin: 25px 20px;
+            padding: 12px 9px;
+            background-color: blanchedalmond;
+            font-family:'Bitter', Arial, Helvetica, sans-serif;
+        }
+
+        #fruits{
+            float: left;
+            width: 45%;
+        }
+
+        #vegetables{
+            float: left;
+            width: 45%;
+        }
+
+        #stationary{
+            /* float: left; */
+            clear: left;
+            width: 95%;
+        }
+
+        p,h3{
+            text-align: justify;
+        }
+
+        h1{
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my store !! yayy broo</h1>
+        <div id="fruits" class="items">
+            <h3>Fruits</h3>
+            <p id="fruitsPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quis quisquam, velit tempore nesciunt aperiam consequatur facilis ipsa voluptatum recusandae fugiat? Corrupti quia facilis assumenda impedit? Commodi accusamus autem voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eum repellat! Consectetur unde, molestias aliquam veniam rerum nobis provident totam obcaecati aut, eius iure doloribus adipisci illum voluptate. Ad voluptatibus minus labore repudiandae reiciendis doloremque pariatur illum quas necessitatibus alias!</p>
+        </div>
+
+        <div id="vegetables" class="items">
+            <h3>Vegetables</h3>
+            <p id="vegetablesPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quis quisquam, velit tempore nesciunt aperiam consequatur facilis ipsa voluptatum recusandae fugiat? Corrupti quia facilis assumenda impedit? Commodi accusamus autem voluptatibus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, laudantium nulla itaque nobis incidunt nostrum maiores quia odio aliquid dignissimos voluptates, ratione natus deleniti mollitia sunt sapiente minus, vel repellat tempore! Vero, sunt explicabo?</p>
+        </div>
+
+        <div id="stationary" class="items">
+            <h3>Stationary</h3>
+            <p id="stationaryPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quis quisquam, velit tempore nesciunt aperiam consequatur facilis ipsa voluptatum recusandae fugiat? Corrupti quia facilis assumenda impedit? Commodi accusamus autem voluptatibus.</p>
+        </div>
+    </div>
+</body>
+</html>
