@@ -6,15 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Positioning </title>
     <style>
-        .box{
+        .container{
             border: 2px solid red;
+            background-color: bisque;
+            height: 3444px;
+        }
+          /* CSS Positions: static(default), relative, absolute, fixed, sticky */
+        .box{
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+        #box3{
+            /* relative means relative to its normal position  */
+            /* position: relative; */
+
+            /* position: absolute;  */
+            /* relative to its parent which is body */
+
+            /* position: fixed; */
+            /* right: 20px; */
+            
+            position: sticky;
+            top: 4px    ;
+            /* top: 34px;
+            left: 40px; This creates a gap after 2nd box. If the box shouldn't be then we go with absolute */
         }
     </style>
 </head>
 <body>
-    <div class="box" id="box1">1</div>
-    <div class="box" id="box2">2</div>
-    <div class="box" id="box3">3</div>
-    <div class="box" id="box4">4</div>
+    <div class="container">
+
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
 </body>
 </html>
