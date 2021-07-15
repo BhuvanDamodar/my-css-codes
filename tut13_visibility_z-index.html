@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+    <style>
+        .class{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        #box1{ 
+            position: relative;
+            top: 40px;
+            background-color: blue;
+            z-index: -8;
+        }
+        #box2{ 
+            /* z-index will not work for position: static */
+            position: relative;
+            top: 14px;
+            z-index: 7;
+            /* display: none; The place is occupied by the next box */
+            /* visibility: hidden; It keeps the place reserved */
+            background-color: darkcyan;
+        }
+        #box3{ background-color: darkmagenta;}
+        #box4{ background-color: violet;}
+    </style>
+</head>
+<body>
+    <!-- .class#box$*4 -->
+    <div class="class" id="box1"></div>
+    <div class="class" id="box2"></div>
+    <div class="class" id="box3"></div>
+    <div class="class" id="box4"></div>
+</body>
+</html>
