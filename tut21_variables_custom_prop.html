@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables and custom properties</title>
+    <style>
+        :root{
+            --primary-color: blue;
+            --max-width: 700px;
+        }
+        .container{
+            display: flex;
+        }
+        .box
+        {
+            --box-color: blue; /*This is variable and its scope is only for this box, it doen't works for container...just like local variable*/
+            border: 2px solid red;
+            height: 117px;
+            width: 142px;
+            margin: 3px 10px;
+            background-color: var(--box-color);
+            box-shadow: 5px 5px var(--box-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
